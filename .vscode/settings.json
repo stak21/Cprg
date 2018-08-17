@@ -1,0 +1,38 @@
+{
+  "files.associations": {
+    "stdio.h": "c",
+    "__locale": "cpp",
+    "stdbool.h": "c",
+    "__bit_reference": "c",
+    "__functional_03": "c",
+    "__mutex_base": "c",
+    "functional": "c",
+    "ios": "c",
+    "istream": "c",
+    "memory": "c",
+    "ostream": "c",
+    "streambuf": "c",
+    "string_view": "c",
+    "tuple": "c",
+    "limits": "c",
+    "__functional_base": "c",
+    "algorithm": "c",
+    "atomic": "c",
+    "bitset": "c",
+    "chrono": "c",
+    "iterator": "c",
+    "locale": "c",
+    "ratio": "c",
+    "system_error": "c",
+    "type_traits": "c",
+    "__tuple": "c",
+    "utility": "c",
+    "__string": "c",
+    "string": "c"
+  },
+  "C_Cpp.errorSquiggles": "Disabled",
+  "code-runner.executorMap": {
+     "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt -g && $dir$fileNameWithoutExt"
+},
+"code-runner.runInTerminal": true
+}
