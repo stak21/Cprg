@@ -35,6 +35,11 @@
 // increment count until you hit a non alphebetic character 
 //repeat until you hit \0
 
+//wordCountUsingReadLine 9.8
+
+//POA: allow the user to input as many lines as they want and to tell the program that they are done they can press enter again
+
+
 #include <stdio.h>
 #include <stdbool.h>
 bool isAlphabetic(char c) {
@@ -138,12 +143,25 @@ bool isEqual(char str1[], char str2[]) {
 
 int main(int argc, char const *argv[])
 {
-int wordCount(char str[]);
-char text1[] = "Well, here goes.";
-char text2[] = "And here we go.. again";
-int wordCount(char str[]);
-printf ("%s - words = %i\n", text1, wordCount(text1));
-printf ("%s - words = %i\n", text2, wordCount(text2));
-return 0;
+  void readLine(char buffer[]);
+  int wordCount(char str[]);
+  char text[81];
+  int totalWords = 0;
+  bool endOfText = false;
 
+  printf ("Type in your text. \n");
+  printf ("When you are done, press 'RETURN'.\n\n");
+
+  while (!endOfText) {
+    readLine(text);
+
+    if (text[0] == '\0') {
+      endOfText = true;
+    } else {
+      totalWords += wordCount(text);
+    }
+    printf ("\nThere are %i words in the above text.\n", totalWords);
+
+    return 0;
+  }
 }
